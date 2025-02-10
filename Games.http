@@ -1,1 +1,29 @@
-GET http://localhost:5097
+GET http://localhost:5097/games
+
+###
+POST http://localhost:5097/games
+Content-Type: application/json
+
+{
+  "name": "Battlefield 1",
+  "genre": "FPS",
+  "price": 59.99,
+  "releaseDate": "2016-10-21"
+}
+
+###
+GET http://localhost:5097/games/1
+
+###
+PUT http://localhost:5097/games/1
+Content-Type: application/json
+
+ {
+    "name": "GTA V",
+    "genre": "RPG",
+    "price": 24.99,
+    "releaseDate": "2013-09-17"
+}
+
+###
+DELETE http://localhost:5097/games/2
